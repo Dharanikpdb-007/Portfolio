@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive and Bold Portfolio">
+  <title>Dharanidharan</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include AOS library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="particles-container"></div>
+
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul><!-- Modal -->
+      <div id="projectModal" class="modal">
+        <div class="modal-content" id="draggableModal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h3>Project Details</h3>
+          <p>Detailed information about your project.</p>
+        </div>
+      </div>
+      
+      <!-- Triggering button -->
+      
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <video autoplay loop muted class="background-video">
+        <source src="bobby.mp4" type="video/mp4">
+      </video>
+      
+    <h1 class="main-title">Hey,Welcome to my Visual fusion.</h1>
+    <p class="intro-text"> I'm Dharanidharan K, a passionate and creative Software Engineer.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p data-aos="fade-up"><b>
+
+    
+      
+      Hi there!
+      
+      I’m a software engineer who loves turning ideas into reality. I specialize in building clean,<br>
+       intuitive applications that make a difference. With a blend of creativity and technical skills, <br>
+       I’m all about creating great user experiences.
+      
+      Let’s connect and build something awesome together!
+      
+      
+    </p></p>
+    
+    <section id="about" class="about">
+        <h2>My skills</h2>
+        <p>I'm a passionate Software engineer who is  expertise in the following skills:</p>
+      
+        <div class>
+          <div class="skill" style="width: 100%" data-skill="HTML">Webpage designing with HTML,CSS,JavaScript</div>
+        </div>
+        <div class>
+          <div class="skill" style="width: 100%" data-skill="CSS">Java and python for App Development</div>
+        </div>
+        <div class>
+          <div class="skill" style="width: 100%" data-skill="JavaScript">Data analytics and data visualisation (PowerBi,Tableau)</div>
+        </div>
+      </section>
+        
+</section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <section id="contact" class="contact">
+        <h2>Social Profiles</h2>
+        <div class="social-icons">
+          <a href="https://github.com/Dharanikpdb-007" target="_blank">
+            <img src="git.png" alt="GitHub" class="social-icon">
+          </a>
+          <a href="http://linkedin.com/in/dharanidharan-k-0932692b3/" target="_blank">
+            <img src="link.png" alt="LinkedIn" class="social-icon">
+          </a>
+        </div>
+      </section>
+      
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card" onclick="openModal('modal1')">
+        <h3>Project 1</h3>
+        <p>A brief description of your first project. This project showcases your skill in [specific tech or tool].</p>
+        <button>View Project</button>
+      </div>
+      <div class="project-card" onclick="openModal('modal2')">
+        <h3>Project 2</h3>
+        <p>A brief description of your second project. This project highlights your ability to work with [specific tech].</p>
+        <button>View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <section id="contact" class="contact">
+        
+      
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Modal for Project Details -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h3>Project 1 Details</h3>
+      <p>More detailed description of your first project goes here. Add images or videos if necessary.</p>
+      <button onclick="window.open('https://github.com/your-project1')">Go to Project</button>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h3>Project 2 Details</h3>
+      <p>More detailed description of your second project goes here. Add images or videos if necessary.</p>
+      <button onclick="window.open('https://github.com/your-project2')">Go to Project</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<div class="scroll-progress"></div>
+
+
+</body>
+</html>
